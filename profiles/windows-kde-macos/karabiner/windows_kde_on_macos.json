@@ -313,6 +313,220 @@
             ]
         },
         {
+            "description": "Developer/browser-friendly Ctrl+Shift shortcuts outside terminals",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f",
+                        "modifiers": {
+                            "mandatory": [
+                                "control",
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock",
+                                "option",
+                                "command"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "f",
+                            "modifiers": [
+                                "command",
+                                "shift"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "p",
+                        "modifiers": {
+                            "mandatory": [
+                                "control",
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock",
+                                "option",
+                                "command"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "p",
+                            "modifiers": [
+                                "command",
+                                "shift"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "t",
+                        "modifiers": {
+                            "mandatory": [
+                                "control",
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock",
+                                "option",
+                                "command"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "t",
+                            "modifiers": [
+                                "command",
+                                "shift"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "n",
+                        "modifiers": {
+                            "mandatory": [
+                                "control",
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock",
+                                "option",
+                                "command"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "n",
+                            "modifiers": [
+                                "command",
+                                "shift"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "l",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock",
+                                "shift",
+                                "option",
+                                "command"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "l",
+                            "modifiers": [
+                                "command"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "y",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock",
+                                "shift",
+                                "option",
+                                "command"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "z",
+                            "modifiers": [
+                                "command",
+                                "shift"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "description": "Terminal/iTerm clipboard compatibility without altering Ctrl+C",
             "manipulators": [
                 {
