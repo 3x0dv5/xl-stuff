@@ -6,12 +6,14 @@ This profile mirrors familiar Windows/KDE shortcuts on macOS with reversible rem
 
 ### Command-style shortcuts outside terminals
 - **Ctrl+C/V/X/Z/A/S/F/W/T → Cmd+C/V/X/Z/A/S/F/W/T** (blocked in Terminal/iTerm to preserve Unix signals)
+
 - **Ctrl+Shift+F → Cmd+Shift+F** (find in project/code search)
 - **Ctrl+Shift+P → Cmd+Shift+P** (command palette in editors/browsers)
 - **Ctrl+Shift+T → Cmd+Shift+T** (reopen closed tab/file)
 - **Ctrl+Shift+N → Cmd+Shift+N** (new incognito/private window or project)
 - **Ctrl+L → Cmd+L** (focus location bar / search field)
 - **Ctrl+Y → Cmd+Shift+Z** (redo where macOS uses Cmd+Shift+Z)
+
 
 ### Terminal exceptions
 - **Ctrl+Shift+C → Cmd+C** in Terminal/iTerm
