@@ -27,4 +27,4 @@ This repository provides Karabiner-Elements complex modifications that bring Win
 - `profiles/windows-kde-macos/karabiner/windows_kde_on_macos.json`: Primary profile with Windows/KDE mappings and terminal exceptions.
 
 ## Tooling
-- `tools/validate_json.py`: Validate Karabiner JSON files for required keys and JSON correctness.
+- `tools/validate_json.py`: Validate Karabiner JSON files for JSON correctness and required Karabiner rule/manipulator fields so they stay compatible with current Karabiner-Elements releases.
