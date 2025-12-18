@@ -4,6 +4,38 @@ This profile mirrors familiar Windows/KDE shortcuts on macOS with reversible rem
 
 ## Mapping overview
 
+| row_number | kde | macos | short description |
+| --- | --- | --- | --- |
+| 1 | Ctrl+C | Cmd+C | Copy outside Terminal/iTerm |
+| 2 | Ctrl+V | Cmd+V | Paste outside Terminal/iTerm |
+| 3 | Ctrl+X | Cmd+X | Cut outside Terminal/iTerm |
+| 4 | Ctrl+Z | Cmd+Z | Undo outside Terminal/iTerm |
+| 5 | Ctrl+A | Cmd+A | Select all outside Terminal/iTerm |
+| 6 | Ctrl+S | Cmd+S | Save outside Terminal/iTerm |
+| 7 | Ctrl+F | Cmd+F | Find outside Terminal/iTerm |
+| 8 | Ctrl+W | Cmd+W | Close tab outside Terminal/iTerm |
+| 9 | Ctrl+T | Cmd+T | New tab outside Terminal/iTerm |
+| 10 | Ctrl+Shift+F | Cmd+Shift+F | Project/code search outside Terminal/iTerm |
+| 11 | Ctrl+Shift+P | Cmd+Shift+P | Command palette outside Terminal/iTerm |
+| 12 | Ctrl+Shift+T | Cmd+Shift+T | Reopen closed tab/file outside Terminal/iTerm |
+| 13 | Ctrl+Shift+N | Cmd+Shift+N | New window/incognito outside Terminal/iTerm |
+| 14 | Ctrl+L | Cmd+L | Focus location bar or search field |
+| 15 | Ctrl+Y | Cmd+Shift+Z | Redo outside Terminal/iTerm |
+| 16 | Ctrl+Shift+C | Cmd+C | Copy in Terminal/iTerm without altering Ctrl+C |
+| 17 | Ctrl+Shift+V | Cmd+V | Paste in Terminal/iTerm |
+| 18 | Win+E | Finder | Open Finder from Windows launcher habit |
+| 19 | Win+R | Cmd+Space | Spotlight/launcher from Windows habit |
+| 20 | Win+L | Ctrl+Cmd+Q | Lock screen |
+| 21 | Alt+F4 | Cmd+Q | Quit app |
+| 22 | Alt+Space | Cmd+Space | Spotlight/launcher |
+| 23 | Alt+F2 | Cmd+Space | Spotlight/launcher |
+| 24 | Ctrl+Alt+T | Terminal | Open Terminal |
+| 25 | Home | Cmd+Left | Jump to line start |
+| 26 | End | Cmd+Right | Jump to line end |
+| 27 | PageUp | PageUp | Preserve native Page Up |
+| 28 | PageDown | PageDown | Preserve native Page Down |
+| 29 | Print Screen | Cmd+Shift+3 | Screenshot |
+
 ### Command-style shortcuts outside terminals
 - **Ctrl+C/V/X/Z/A/S/F/W/T → Cmd+C/V/X/Z/A/S/F/W/T** (blocked in Terminal/iTerm to preserve Unix signals)
 
