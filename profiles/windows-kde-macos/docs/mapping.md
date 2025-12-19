@@ -42,7 +42,7 @@ This profile mirrors familiar Windows/KDE shortcuts on macOS with reversible rem
 | 34 | Ctrl+\ | Cmd+Alt+F | Replace outside Terminal/iTerm (nano replace) |
 | 35 | F10 | Cmd+Shift+N | New folder in Finder (Dolphin habit) |
 | 36 | Ctrl+D | Cmd+D | Duplicate line/selection outside Terminal/iTerm |
-| 37 | Backslash ↔ Backtick | Swap positions | Put backtick next to `1` and backslash by `Z` |
+| 37 | Backslash ↔ Backtick | Swap positions (British PC layout) | Put backtick next to `1` and backslash by `Z` when using the **British – PC** input source |
 
 ### Command-style shortcuts outside terminals
 - **Ctrl+C/V/X/Z/A/S/F/W/T → Cmd+C/V/X/Z/A/S/F/W/T** (blocked in Terminal/iTerm to preserve Unix signals)
@@ -55,7 +55,7 @@ This profile mirrors familiar Windows/KDE shortcuts on macOS with reversible rem
 - **Ctrl+L → Cmd+L** (focus location bar / search field; Finder uses Cmd+Shift+G for editable path)
 - **Ctrl+Y → Cmd+Shift+Z** (redo where macOS uses Cmd+Shift+Z)
 - **Ctrl+D → Cmd+D** (duplicate line/selection in editors like PyCharm/VS Code/Chrome DevTools)
-- **Backslash ↔ Backtick** (swap physical key outputs so backtick lives next to `1` and backslash sits by `Z` on ISO-style layouts)
+- **Backslash ↔ Backtick** (swap physical key outputs so backtick lives next to `1` and backslash sits by `Z` when the **British – PC** input source is active)
 
 
 ### Terminal exceptions

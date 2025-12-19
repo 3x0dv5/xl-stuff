@@ -1189,6 +1189,16 @@
                         {
                             "key_code": "grave_accent_and_tilde"
                         }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "input_source_if",
+                            "input_sources": [
+                                {
+                                    "input_source_id": "^com\\.apple\\.keylayout\\.British-PC$"
+                                }
+                            ]
+                        }
                     ]
                 },
                 {
@@ -1207,7 +1217,17 @@
                     },
                     "to": [
                         {
-                            "key_code": "backslash"
+                        "key_code": "backslash"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "input_source_if",
+                            "input_sources": [
+                                {
+                                    "input_source_id": "^com\\.apple\\.keylayout\\.British-PC$"
+                                }
+                            ]
                         }
                     ]
                 }
