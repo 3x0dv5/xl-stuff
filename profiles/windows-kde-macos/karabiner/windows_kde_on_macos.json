@@ -279,6 +279,40 @@
                 {
                     "type": "basic",
                     "from": {
+                        "key_code": "d",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock",
+                                "shift",
+                                "option",
+                                "command"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "d",
+                            "modifiers": [
+                                "command"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
                         "key_code": "t",
                         "modifiers": {
                             "mandatory": [
@@ -1128,6 +1162,71 @@
                             "modifiers": [
                                 "command",
                                 "shift"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Backslash/backtick positions (ISO-style)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "backslash",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock",
+                                "shift",
+                                "option",
+                                "control",
+                                "command"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "grave_accent_and_tilde"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "input_source_if",
+                            "input_sources": [
+                                {
+                                    "input_source_id": "^com\\.apple\\.keylayout\\.British-PC$"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "grave_accent_and_tilde",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock",
+                                "shift",
+                                "option",
+                                "control",
+                                "command"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                        "key_code": "backslash"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "input_source_if",
+                            "input_sources": [
+                                {
+                                    "input_source_id": "^com\\.apple\\.keylayout\\.British-PC$"
+                                }
                             ]
                         }
                     ]

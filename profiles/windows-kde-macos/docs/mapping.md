@@ -41,6 +41,8 @@ This profile mirrors familiar Windows/KDE shortcuts on macOS with reversible rem
 | 33 | Ctrl+U | Cmd+V | Paste outside Terminal/iTerm (nano uncut) |
 | 34 | Ctrl+\ | Cmd+Alt+F | Replace outside Terminal/iTerm (nano replace) |
 | 35 | F10 | Cmd+Shift+N | New folder in Finder (Dolphin habit) |
+| 36 | Ctrl+D | Cmd+D | Duplicate line/selection outside Terminal/iTerm |
+| 37 | Backslash ↔ Backtick | Swap positions (British PC layout) | Put backtick next to `1` and backslash by `Z` when using the **British – PC** input source |
 
 ### Command-style shortcuts outside terminals
 - **Ctrl+C/V/X/Z/A/S/F/W/T → Cmd+C/V/X/Z/A/S/F/W/T** (blocked in Terminal/iTerm to preserve Unix signals)
@@ -52,6 +54,8 @@ This profile mirrors familiar Windows/KDE shortcuts on macOS with reversible rem
 - **F10 → Cmd+Shift+N** (new folder in Finder like Dolphin)
 - **Ctrl+L → Cmd+L** (focus location bar / search field; Finder uses Cmd+Shift+G for editable path)
 - **Ctrl+Y → Cmd+Shift+Z** (redo where macOS uses Cmd+Shift+Z)
+- **Ctrl+D → Cmd+D** (duplicate line/selection in editors like PyCharm/VS Code/Chrome DevTools)
+- **Backslash ↔ Backtick** (swap physical key outputs so backtick lives next to `1` and backslash sits by `Z` when the **British – PC** input source is active)
 
 
 ### Terminal exceptions
@@ -76,6 +80,12 @@ This profile mirrors familiar Windows/KDE shortcuts on macOS with reversible rem
 - **End → Cmd+Right** (line end)
 - **PageUp/PageDown → Native Page Up/Down**
 - **Print Screen → macOS screenshot** (Cmd+Shift+3)
+
+### Dragging files and folders (copy/move/alias)
+- **Option + drag** → Copy to the destination (matches the Windows Ctrl+drag copy behavior).
+- **Command + drag** → Move to the destination (useful when dragging across volumes that would otherwise copy by default).
+- **Command + Option + drag** → Create an alias (shortcut) at the destination instead of copying or moving.
+> macOS hardcodes these drag modifiers to Option/Command; Karabiner remaps key events but cannot change Finder’s built-in drag behaviors to use Ctrl instead of Command.
 
 ### Nano muscle memory outside Terminal/iTerm
 - **Ctrl+O → Cmd+S** for save/write-out outside terminals
@@ -104,6 +114,17 @@ bind ^\\ replace main
 
 ## Implementation note
 - Karabiner-Elements remaps keys in macOS user space by intercepting HID events; it does not modify keyboard firmware or hardware-level mappings, so the changes are reversible by disabling or removing the profile.
+
+## Troubleshooting: Karabiner settings never apply
+If Karabiner-Elements never seems to apply this profile and `~/.config/karabiner` is missing, ensure the app can create and own its config directory:
+
+1. Open Finder and press **Cmd+Shift+H** to jump to your Home folder.
+2. Press **Cmd+Shift+.** to reveal hidden items.
+3. Right-click `.config` → **Get Info**.
+4. If the padlock in the lower-right is locked, click it to allow changes.
+5. Under **Sharing & Permissions**, make yourself the owner with **Read & Write** access and apply the permissions to enclosed items.
+
+Restart Karabiner-Elements afterward so it can create `~/.config/karabiner` and pick up the rules.
 
 ## Dock options without admin rights
 You can keep the stock Dock for stability and add a user-space taskbar-style dock without admin access by installing apps into `~/Applications` instead of `/Applications`:
